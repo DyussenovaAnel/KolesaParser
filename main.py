@@ -21,7 +21,7 @@ soup = bs(page.content, 'html.parser')
 pages = soup.find("div", class_="pager")
 page = int(pages.find_all("li")[-1].getText())
 print(page)
-page = 53
+# page = 53
 
 
 def parsee(url):
